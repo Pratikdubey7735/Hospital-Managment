@@ -13,7 +13,7 @@ const Signup = () => {
 
     try {
       await axios
-        .post('http://localhost:8000/signup', {
+        .post('http://backend-o0qh.onrender.com/api/signup', {
           email,
           password,
         })
