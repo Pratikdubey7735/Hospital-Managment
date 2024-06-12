@@ -51,7 +51,7 @@ const Appointment = () => {
     }
 
     try {
-      await axios.post('http://backend-o0qh.onrender.com/api/submitFormData', formData);
+      await axios.post('https://backend-o0qh.onrender.com/api/submitFormData', formData);
       console.log('Form data submitted successfully');
       window.alert('Form data submitted successfully! Please complete Payment to confirm your appointment');
       setAvailableSlotCount((prevCount) => Math.max(0, prevCount - 1));
@@ -70,7 +70,7 @@ const Appointment = () => {
 
   const fetchAppointmentsCount = async (selectedDate) => {
     try {
-      const response = await axios.get(`http://backend-o0qh.onrender.com/api/appointmentsCount?date=${selectedDate}`);
+      const response = await axios.get(`https://backend-o0qh.onrender.com/api/appointmentsCount?date=${selectedDate}`);
       const appointmentsCount = response.data.count;
       setIsSlotAvailable(appointmentsCount < 5);
     } catch (error) {
