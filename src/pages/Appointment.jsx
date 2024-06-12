@@ -51,7 +51,7 @@ const Appointment = () => {
     }
 
     try {
-      await axios.post('http://localhost:8000/api/submitFormData', formData);
+      await axios.post('http://backend-o0qh.onrender.com//api/submitFormData', formData);
       console.log('Form data submitted successfully');
       window.alert('Form data submitted successfully! Please complete Payment to confirm your appointment');
       setAvailableSlotCount((prevCount) => Math.max(0, prevCount - 1));
