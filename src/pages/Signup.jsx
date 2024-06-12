@@ -13,7 +13,7 @@ const Signup = () => {
 
     try {
       await axios
-        .post('http://backend-o0qh.onrender.com/api/signup', {
+        .post('https://backend-o0qh.onrender.com/api/signup', {
           email,
           password,
         })
