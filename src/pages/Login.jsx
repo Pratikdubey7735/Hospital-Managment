@@ -12,7 +12,7 @@ const Login = () => {
 
     try {
       await axios
-        .post('http://localhost:8000/login', {
+        .post('http://https://backend-o0qh.onrender.com/api/login', {
           email,
           password,
         })
